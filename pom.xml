@@ -9,7 +9,7 @@
 		<maven.compiler.target>14</maven.compiler.target>
 		<maven.compiler.source>14</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<exec.mainClass>imc.Main</exec.mainClass>
+		<exec.mainClass>imc.dad.Main</exec.mainClass>
 	</properties>
 
 	<dependencies>

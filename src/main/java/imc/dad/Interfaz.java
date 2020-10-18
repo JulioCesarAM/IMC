@@ -1,4 +1,4 @@
-package imc;
+package imc.dad;
 import javafx.application.Application;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringExpression;
@@ -59,7 +59,7 @@ public class Interfaz extends Application {
 				.then("(peso*altura^2)")
 					.otherwise(Bindings
 							.when(alturaParaImc.isEqualTo(0))
-							.then("IMC: (peso*altura^2)").otherwise(calculoImc.asString()));
+							.then("(peso*altura^2)").otherwise(calculoImc.asString()));
 		
 		formulaImc.textProperty().bind(aux);
 		formulaImc.textProperty().addListener(e->{
