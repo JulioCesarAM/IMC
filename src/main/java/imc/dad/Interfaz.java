@@ -54,7 +54,7 @@ public class Interfaz extends Application {
 		Bindings.bindBidirectional(wheightFieldText.textProperty(),pesoParaImc, (StringConverter<Number>)converter);
 		Bindings.bindBidirectional(heightFieldText.textProperty(),alturaParaImc, (StringConverter<Number>)converter);
 		
-		aux=Bindings
+		aux=Bindings//grande sergio
 				.when(Bindings.isEmpty(heightFieldText.textProperty()).and(Bindings.isEmpty(wheightFieldText.textProperty())))
 				.then("(peso*altura^2)")
 					.otherwise(Bindings
