@@ -63,7 +63,9 @@ public class Interfaz extends Application {
 		
 		formulaImc.textProperty().bind(aux);
 		formulaImc.textProperty().addListener(e->{
-			if (calculoImc.doubleValue()<18.5)
+			if (calculoImc.doubleValue()==0)
+				clasificacion.setText("introduce valores para calcular");
+			else if (calculoImc.doubleValue()<18.5 && calculoImc.doubleValue()>0)
 				clasificacion.setText("bajo peso");
 			else if (calculoImc.doubleValue()>=18.5 && calculoImc.doubleValue()<25)
 				clasificacion.setText("peso normal");
